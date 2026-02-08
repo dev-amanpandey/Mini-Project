@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assests/Sonora icon.ico">
+    <title>Sonara: Music Player Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home" />
+</head>
+<body>
+    <header>
+        <div class="sidebar">
+            <div class="icon">
+                <img src="/assests/Sonora icon.ico" alt="Sonara" class="web-icon">
+                <p><a href="#">Sonara</a></p>
+            </div>
+            <div class="menu">
+               <ul>
+                   <li><i class="fa-solid fa-house"></i><a href="#">Home </a></li>
+                   <li><i class="fa-solid fa-magnifying-glass"></i><a href="#">Search</a></li>
+                   <li><i class="fa-solid fa-list"></i><a href="#">Playlists</a></li>
+                    <li><i class="fa-solid fa-user"></i><a href="#">Account</a></li>
+               </ul>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="nav">
+                <div class="arrows">
+                    <a href="#"><img src="/assests/backward_icon.png" alt="backward-icon" class="arrow-icon"></a>
+                    <a href="#"><img src="/assests/forward_icon.png" alt="forward-icon" class="arrow-icon"></a>
+                </div>
+                <div class="symbol">
+                    <img src="/assests/Sonora icon.ico" alt="Sonara" class="top-symbol">
+                </div>
+                <div class="sign-area">
+                    <button class="sign-in">Sign In</button>
+                    <button class="sign-up">Sign Up</button>
+                </div>
+            </div>
+            <div class="section artists">
+                <h2>Top Artists</h2>
+                <div class="artist-grid">
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="/assests/playboi carti.jpg" alt="Artist 1">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <p>Playboi Carti</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="/assests/raftaar.jpg" alt="Artist 2">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <p>Raftaar</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="/assests/travis scott.jpg" alt="Artist 3">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <p>Travis Scott</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="/assests/kendrick lamar.jpg" alt="Artist 4">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <p>Kendrick Lamar</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="/assests/karma.jpg" alt="Artist 4">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <p>KARMA</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="/assests/talha anjum.jpg" alt="Artist 4">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <p>Talha Anjum</p>
+                    </div>
+                    <div class="artist-card">
+                        <div class="artist-img-container">
+                            <img src="/assests/talha yunas.jpg" alt="Artist 4">
+                            <button class="play-button">
+                                <i class="fa-solid fa-play"></i>
+                            </button>
+                        </div>
+                        <p>Talha Yunas</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="section albums">
+                <h2>Albums & Songs</h2>
+                <div class="grid">
+                    <div class="card" onclick="playSong(0)">
+                        <img src="/assests/song_cover1.jpg" alt="Album 1">
+                        <p>JANI-Since Tum</p>
+                    </div>
+                    <div class="card" onclick="playSong(1)">
+                        <img src="/assests/Channa Ve - 640x480.jpg" alt="Album 2">
+                        <p>Channa Ve</p>
+                    </div>
+                    <div class="card"  onclick="playSong(2)">
+                        <img src="/assests/KR$NA - Window Shopper Freestyle - 1280x720.jpg" alt="Album 3">
+                        <p>KR$NA - Window Shopper</p>
+                    </div>
+                    <div class="card"  onclick="playSong(3)">
+                        <img src="/assests/Downers at Dusk - 1280x720.jpg" alt="Album 3">
+                        <p>Downers at Dusk</p>
+                    </div>
+                    <div class="card"  onclick="playSong(4)">
+                        <img src="/assests/Runnin_ - JJ47 x Talha Anjum (Prod. @Jokhay ) MUSIC VIDEO - 1280x720.jpg" alt="Album 3">
+                        <p>Runnin'</p>
+                    </div>
+                    <div class="card"  onclick="playSong(5)">
+                        <img src="/assests/Red Leather - 640x480.jpg" alt="Album 3">
+                        <p>Red Leather</p>
+                    </div>
+                    <div class="card"  onclick="playSong(6)">
+                        <img src="/assests/DNA. - 1280x720.jpg" alt="Album 3">
+                        <p>DNA</p>
+                    </div>
+                    <div class="card"  onclick="playSong(7)">
+                        <img src="/assests/Woh Raat - 1280x720.jpg" alt="Album 3">
+                        <p>Woh raat</p>
+                    </div>
+                    <div class="card"  onclick="playSong(8)">
+                        <img src="/assests/Shekhinah & Seedhe Maut - _Change_ (Live)  Jameson Distilled Sounds - 1280x720.jpg" alt="Album 3">
+                        <p>Change</p>
+                    </div>
+                    <div class="card"  onclick="playSong(9)">
+                        <img src="/assests/BADA - 1280x720.jpg" alt="Album 3">
+                        <p>BADA</p>
+                    </div>
+
+                </div>
+            </div>
+        
+            <div class="section playlists">
+                <h2>Top Playlists</h2>
+                <div class="grid">
+                    <div class="card">
+                        <img src="/assests/card1img.jpeg" alt="Playlist 1">
+                        <p>Top 50 - Global</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assests/card5img.jpeg" alt="Playlist 2">
+                        <p>PWeekly Top Songs</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assests/card6img.jpeg" alt="Playlist 3">
+                        <p>Top Songs India</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assests/dhh.jpg" alt="Playlist 3">
+                        <p>Top DHH songs</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assests/night drive.jpg" alt="Playlist 3">
+                        <p>Late Night Drive</p>
+                    </div>
+                    <div class="card">
+                        <img src="/assests/uk drill.jpg" alt="Playlist 3">
+                        <p>UK Drills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="player-left">
+                <img src="/assets/album_art.jpg" alt="Album Art" class="album-art">
+                <div class="song-info">
+                    <p class="song-title">Song Title</p>
+                    <p class="artist-name">Artist Name</p>
+                </div>
+            </div>
+            <div class="player-center">
+                <div class="controls">
+                    <button class="control-btn shuffle"><i class="fa-solid fa-shuffle"></i></button>
+                    <button class="control-btn prev"><i class="fa-solid fa-backward-step"></i></button>
+                    <button class="control-btn play"><i class="fa-solid fa-play"></i></button>
+                    <button class="control-btn next"><i class="fa-solid fa-forward-step"></i></button>
+                    <button class="control-btn repeat"><i class="fa-solid fa-repeat"></i></button>
+                </div>
+                <div class="progress-bar">
+                    <span class="current-time">0:00</span>
+                    <input type="range" class="progress-slider" min="0" max="100" value="30">
+                    <span class="total-time">4:00</span>
+                </div>
+            </div>
+            <div class="player-right">
+                <button class="control-btn queue"><i class="fa-solid fa-list"></i></button>
+                <button class="control-btn devices"><i class="fa-solid fa-laptop"></i></button>
+                <div class="volume-control">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" class="volume-slider" min="0" max="100" value="50">
+                </div>
+            </div>
+
+            <audio id="audio-player" src="/assets/song1.mp3"></audio>
+        </div>
+        
+    </header>
+    <script src="script.js"></script>
+</body>
+</html>
