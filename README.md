@@ -1,6 +1,9 @@
 # 🎵 Sonara — Music Player
 
 Sonara is a simple, modern music player built using **HTML, CSS, and JavaScript**. It provides a clean interface for browsing and playing music directly in the browser.
+## 🌐 Live Demo
+
+👉 **[Visit Sonara Music Player](https://sonara-fc8m.onrender.com)**
 
 ## 🚀 Features
 
